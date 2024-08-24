@@ -1,0 +1,42 @@
+<header>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg border-bottom border-top p-0">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold " routerLink="/products">                
+                <img id = "img-log" src="img/tennis-sports.jpg" alt="logo" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!--Toggle  -->
+                <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+            </button>            
+            <!-- Nav Items -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                @if(menu){
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0  text-center ">
+                        @for(item of menu.items; track item.id){
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fw-semibold text-uppercase  me-1 text-white" href="javascript:void(null)" (click)="changeParam(item.path)"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{item.name}}                                                           
+                                </a>                        
+                            </li>
+                        } 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-semibold text-uppercase  me-1 text-white" href="#"
+                            (click)="changeParam('/shopping-cart')" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-shopping-cart">
+                                    <span class="position-absolute top-9 start-100 translate-middle badge rounded-pill bg-success">{{getLengthCartItems()}}</span>
+                                </i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(null)"></a>
+                        </li>
+                    </ul>
+                }                 
+            </div>
+        </div>
+    </nav>
+</header>

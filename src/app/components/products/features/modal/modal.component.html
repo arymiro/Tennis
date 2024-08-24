@@ -1,0 +1,24 @@
+<section>
+    <div class="p-4 text-dark">
+        @if (product) {
+        <p><strong>Name:</strong> {{ product.name }}</p>
+        <hr />
+        <p><strong>Brand:</strong> {{ product.brand }}</p>
+        <hr />
+        <p><strong>Model:</strong> {{ product.model }}</p>
+        <hr />
+        <p><strong>Size:</strong> {{ product.size.value }} {{product.size.description}}</p>
+        <hr />
+        <p><strong>Pattern:</strong> {{ product.pattern }}</p>
+        <hr />
+        <p><strong>Length:</strong> {{ product.length.value }} {{product.length.description}}</p>
+        <hr />
+        <p><strong>Tamiz:</strong> {{ product.tamiz.value }} {{product.tamiz.description}}</p>
+        <hr />
+        <p><strong>Price:</strong> {{ product.price.value }} {{ product.price.description }}</p>
+        }
+    </div>
+    <div class="modalButton mb-3">
+        <button (click)="exitModal()">Close</button>
+    </div>
+</section>

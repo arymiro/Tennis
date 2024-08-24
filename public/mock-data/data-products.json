@@ -1,0 +1,146 @@
+[
+   {
+      "id": 1,
+      "size": {
+         "value": 33.5,
+         "description": "cm"
+      },
+      "length": {
+         "value": 60.9,
+         "description": "cm"
+      },
+      "tamiz": {
+         "value": 60.9,
+         "description": "Corto"
+      },
+      "price": {
+         "value": 65.80,
+         "description": "COP $"
+      },
+      "name": "Super raqueta",
+      "brand": "Puma",
+      "model": "RQ-1500",
+      "pattern": "Profesiona",
+      "image": "img/raqueta.jpg"
+   },
+   {
+      "id": 2,
+      "size": {
+         "value": 33.5,
+         "description": "cm"
+      },
+      "length": {
+         "value": 60.9,
+         "description": "cm"
+      },
+      "tamiz": {
+         "value": 60.9,
+         "description": "Corto"
+      },
+      "price": {
+         "value": 95.80,
+         "description": "COP $"
+      },
+      "name": "Raqueta Americana",
+      "brand": "Puma",
+      "model": "RQ-1500",
+      "pattern": "Profesiona",
+      "image": "img/raqueta.jpg"
+   },
+   {
+      "id": 3,
+      "size": {
+         "value": 33.5,
+         "description": "cm"
+      },
+      "length": {
+         "value": 60.9,
+         "description": "cm"
+      },
+      "tamiz": {
+         "value": 60.9,
+         "description": "Corto"
+      },
+      "price": {
+         "value": 206.80,
+         "description": "COP $"
+      },
+      "name": "Raqueta",
+      "brand": "Puma",
+      "model": "RQ-1500",
+      "pattern": "Profesiona",
+      "image": "img/raqueta.jpg"
+   },
+   {
+      "id": 4,
+      "size": {
+         "value": 33.5,
+         "description": "cm"
+      },
+      "length": {
+         "value": 60.9,
+         "description": "cm"
+      },
+      "tamiz": {
+         "value": 60.9,
+         "description": "Corto"
+      },
+      "price": {
+         "value": 105.80,
+         "description": "COP $"
+      },
+      "name": "Raqueta best player",
+      "brand": "Puma",
+      "model": "RQ-1500",
+      "pattern": "Profesiona",
+      "image": "img/raqueta.jpg"
+   },
+   {
+      "id": 5,
+      "size": {
+         "value": 33.5,
+         "description": "cm"
+      },
+      "length": {
+         "value": 60.9,
+         "description": "cm"
+      },
+      "tamiz": {
+         "value": 60.9,
+         "description": "Corto"
+      },
+      "price": {
+         "value": 70.80,
+         "description": "COP $"
+      },
+      "name": "Raqueta professional",
+      "brand": "Puma",
+      "model": "RQ-1500",
+      "pattern": "Profesiona",
+      "image": "img/raqueta.jpg"
+   },
+   {
+      "id": 6,
+      "size": {
+         "value": 33.5,
+         "description": "cm"
+      },
+      "length": {
+         "value": 60.9,
+         "description": "cm"
+      },
+      "tamiz": {
+         "value": 60.9,
+         "description": "Corto"
+      },
+      "price": {
+         "value": 45.80,
+         "description": "COP $"
+      },
+      "name": "Raqueta intermediate",
+      "brand": "Puma",
+      "model": "RQ-1500",
+      "pattern": "Profesiona",
+      "image": "img/raqueta.jpg"
+   }
+]

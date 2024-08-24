@@ -1,0 +1,36 @@
+<div class="row mb-4 d-flex justify-content-between align-items-center" >
+    <div class="col-md-2 col-lg-2 col-xl-2">
+        <img [src]="cartItem.producto.image"
+            class="img-fluid rounded-3">
+    </div>
+    <div class="col-md-3 col-lg-3 col-xl-3">
+        <h6 class="text-muted">{{cartItem.producto.name}}</h6>
+        <h6 class="mb-0">{{cartItem.producto.brand}} {{cartItem.producto.model}}</h6>
+        <h6 class="mb-0">{{cartItem.producto.price.value}} {{cartItem.producto.price.description}}</h6>
+    </div>
+    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2" (click)="subtractItem()">
+            <i class="fas fa-minus"></i>
+        </button>
+    
+        <input min="1" name="quantity" type="number" class="form-control form-control-sm"
+            [(ngModel)]="cartItem.cantidad" />
+    
+        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link px-2" (click)="increaseItem()">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+        <h6 class="mb-0">{{getMountByCountProduct()| number:'1.2-2'}} {{cartItem.producto.price.description}}</h6>
+    </div>
+    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+        <a href="javascript:void(null)" class="text-muted" (click)="deleteItem()"><i class="fas fa-times"></i></a>
+    </div>
+    <hr class="my-4">
+</div>
+
+
+    
+
+
+

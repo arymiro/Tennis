@@ -1,0 +1,14 @@
+.modalButton {
+    text-align: end;
+    justify-content: end;
+}
+
+.modalButton button {
+    border: 1px solid rgb(6, 12, 67);
+    background-color: rgb(6, 12, 67);
+    color: white;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+}

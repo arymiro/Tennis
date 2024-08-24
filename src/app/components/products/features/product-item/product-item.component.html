@@ -1,0 +1,38 @@
+<div class="box-shadow">
+  <div class="card mt-2">
+    <img [src]="product.image" class="img-product card-img-top img-fluid" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{product.name}}</h5>
+      <p class="card-text"><span class="text-danger fw-semibold me-2">${{product.price.value}}</span>
+
+      </p>
+      <div class="row"> 
+        <div class="col-6">
+          <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+          <span><i class="fa-solid fa-star  m-0" style="color: #f1f50f;"></i></span>
+          <span><i class="fa-solid fa-star-half-stroke  m-0" style="color: #f1f50f;"></i></span>
+          <span class="text-muted">(25)</span>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-tennis" (click)="openModal(viewUserTemplate)">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="button" class="btn btn-success" (click)="addToCart()">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- modal section -->
+
+<ng-template #viewUserTemplate>
+  <app-modal [product]="product" [exitModal]="exitModal" />
+</ng-template>
+
+
